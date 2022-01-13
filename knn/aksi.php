@@ -105,42 +105,6 @@ elseif ($mod == 'nilai_tambah') {
     header("location:index.php?m=nilai");
 }
 
-/** PENYAKIT */
-// elseif ($mod == 'penyakit_tambah') {
-//     $id_nilai = $_POST['id_nilai'];
-//     $definisi = $_POST['definisi'];
-//     $pencegahan = $_POST['pencegahan'];
-//     $solusi = $_POST['solusi'];
-
-//     if (!$id_nilai)
-//         print_msg("Field yang bertanda * tidak boleh kosong!");
-//     elseif ($db->get_row("SELECT * FROM tb_penyakit WHERE id_nilai='$id_nilai'")) {
-//         print_msg("Penyakit sudah ada");
-//     } else {
-//         $db->query("INSERT INTO tb_penyakit (id_nilai, definisi, pencegahan, solusi) 
-//             VALUES ('$id_nilai', '$definisi', '$pencegahan', '$solusi')");
-//         redirect_js("index.php?m=penyakit");
-//     }
-// } else if ($mod == 'penyakit_ubah') {
-//     $id_nilai = $_POST['id_nilai'];
-//     $definisi = $_POST['definisi'];
-//     $pencegahan = $_POST['pencegahan'];
-//     $solusi = $_POST['solusi'];
-
-//     if (!$id_nilai)
-//         print_msg("Field yang bertanda * tidak boleh kosong!");
-//     elseif ($db->get_row("SELECT * FROM tb_penyakit WHERE id_nilai='$id_nilai' AND id_penyakit<>'$_GET[ID]'")) {
-//         print_msg("Penyakit sudah ada");
-//     } else {
-//         $db->query("UPDATE tb_penyakit SET id_nilai='$id_nilai', definisi='$definisi', pencegahan='$pencegahan', solusi='$solusi' 
-//             WHERE id_penyakit='$_GET[ID]'");
-//         redirect_js("index.php?m=penyakit");
-//     }
-// } else if ($act == 'penyakit_hapus') {
-//     $db->query("DELETE FROM tb_penyakit WHERE id_penyakit='$_GET[ID]'");
-//     header("location:index.php?m=penyakit");
-// }
-
 /** ATRIBUT */
 if ($mod == 'atribut_tambah') {
     $id_atribut = $_POST['id_atribut'];
